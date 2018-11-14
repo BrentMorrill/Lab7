@@ -1,0 +1,7 @@
+#Brent Morrill Lab 7
+while ($starter = read-host -prompt "type exit if you want to exit"){
+ if ($starter -eq exit) {
+ exit}
+
+Start-job for-each | format-list -id | write-output
+}
